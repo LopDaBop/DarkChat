@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowChat - Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div style="font-weight:800;font-size:1.3rem;color:var(--accent);text-shadow:var(--accent-glow);letter-spacing:1px;">GlowChat</div>
+    <nav>
+      <a href="/" id="nav-home">Home</a>
+      <a href="/chat" id="nav-chat">Chat</a>
+      <a href="/login" id="nav-login">Login</a>
+      <a href="/register" id="nav-register">Register</a>
+      <a href="#" id="nav-logout" style="display:none;">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <div class="profile-card">
+      <img src="" id="profile-avatar" class="profile-avatar" alt="Avatar" />
+      <div class="profile-display" id="profile-display"></div>
+      <div class="profile-bio" id="profile-bio"></div>
+      <button id="edit-profile-btn" class="profile-edit-btn">Edit Profile</button>
+      <form id="profile-edit-form" style="display:none;width:100%;margin-top:1rem;">
+        <label for="edit-display-name">Display Name</label>
+        <input type="text" id="edit-display-name" />
+        <label for="edit-bio">Bio</label>
+        <textarea id="edit-bio" maxlength="160"></textarea>
+        <label for="edit-avatar">Avatar URL</label>
+        <input type="url" id="edit-avatar" />
+        <button type="submit" class="btn">Save</button>
+        <button type="button" id="cancel-edit" class="btn btn-danger">Cancel</button>
+      </form>
+      <div id="profile-msg" style="margin-top:1rem;"></div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

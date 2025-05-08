@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowChat - Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    {{ ... }}
+    <div style="font-weight:800;font-size:1.3rem;color:var(--accent);text-shadow:var(--accent-glow);letter-spacing:1px;">GlowChat</div>
+    <nav>
+      <a href="/" id="nav-home">Home</a>
+      <a href="/chat" id="nav-chat">Chat</a>
+      <a href="/login" id="nav-login">Login</a>
+      <a href="/register" id="nav-register">Register</a>
+      <a href="#" id="nav-logout" style="display:none;">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h2 style="color:var(--accent);text-shadow:var(--accent-glow);">Login</h2>
+      <form id="login-form">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" required autocomplete="username" />
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required autocomplete="current-password" />
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <div style="margin-top:1rem;">
+        <span style="color:var(--muted);">Don't have an account?</span>
+        <a href="/register" class="btn" style="margin-left:0.5rem;">Register</a>
+      </div>
+      <div id="login-error" style="color:var(--danger);margin-top:1rem;"></div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

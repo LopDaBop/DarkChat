@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowChat - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div style="font-weight:800;font-size:1.3rem;color:var(--accent);text-shadow:var(--accent-glow);letter-spacing:1px;">GlowChat</div>
+    <nav>
+      <a href="/" id="nav-home">Home</a>
+      <a href="/chat" id="nav-chat">Chat</a>
+      <a href="/login" id="nav-login">Login</a>
+      <a href="/register" id="nav-register">Register</a>
+      <a href="#" id="nav-logout" style="display:none;">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card" style="text-align:center;">
+      <h1 style="font-size:2.2rem;color:var(--accent);text-shadow:var(--accent-glow);">Welcome to GlowChat</h1>
+      <p style="color:var(--muted);font-size:1.2rem;">A modern, glowing, private chat system.<br>Connect, chat, make friends, and join groups—all in dark mode.</p>
+      <div style="margin-top:2rem;">
+        <a href="/login" class="btn">Login</a>
+        <a href="/register" class="btn" style="margin-left:1rem;">Register</a>
+        <a href="/chat" class="btn" style="margin-left:1rem;">Open Chat</a>
+      </div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
